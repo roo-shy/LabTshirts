@@ -1,0 +1,304 @@
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  flex:1;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 42px;
+  margin-right: 55px;
+}
+
+.container {
+  border: 3px solid #5CA4D7;
+  height:324px;
+  width:335px;
+  margin:auto;
+  padding:0px;
+  perspective: 1000px;
+  position: relative;
+}
+
+.container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.6s;
+}
+
+.card .front {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  height:268px;
+  width:280px;
+  z-index: 2;
+}
+
+.card .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  height:268px;
+  width:280px;
+  transform: rotateY(180deg);
+}
+
+.footer{
+  margin: 0 auto;
+  width:335px;
+  border-right: 3px solid #5CA4D7;
+  border-left: 3px solid #5CA4D7;
+  border-bottom: 3px solid #5CA4D7;
+}
+
+ul.right{
+  margin: 0 auto;
+}
+
+ul.right li{
+  color:#5CA4D7;
+  font-size: 20px;
+  margin: 0 auto;
+  width: 31px;
+  height: 31px;
+  border-left: 3px solid #5CA4D7;
+  border-bottom: 3px solid #5CA4D7;
+  margin-left: 261px;
+  list-style: none;
+  rotateY:90 deg;
+  text-align: center;;
+
+}
+
+.right li:hover {
+  background:#5CA4D7;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+
+ul.tools {
+  margin: 0 auto;
+  padding-left: 0;
+  display: flex;
+  position: relative;
+}
+
+.tools li {
+  font-family: Arial;
+  font-size: 18px;
+  margin: 0 auto;
+  list-style: none;
+  display: inline-block;
+  width: 20%;
+  padding-top:5px;
+  padding-left: 0;
+  text-align: center;
+  justify-content: space-between;
+
+}
+
+.tools li:last-of-type{
+  border-right: none;
+}
+
+ul li{
+  color:#5CA4D7;
+  font-size: 23px;
+  border-right: 3px solid #5CA4D7;
+  line-height: 35px;
+}
+
+ul li:hover {
+  background:#5CA4D7;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+li.tooltip1:hover:after{
+  margin: 0 auto;
+  width: 81px;
+  height: 181px;
+  bottom:53px;
+  left:123px;
+  color: #fff;
+  content: url(images/shirtsizes.jpg);
+  border-top: 2px solid #5CA4D7;
+  border-right: 2px solid #5CA4D7;
+  border-left: 2px solid #5CA4D7;
+  position: absolute;
+  content-align: center;
+  z-index: 98;
+}
+
+li.tooltip1:hover:before{
+  content: "";
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  top: -3px;
+  border-style: solid;
+}
+
+li.tooltip2:hover:after{
+  margin: 0 auto;
+  width: 83px;
+  height: 83px;
+  bottom:53px;
+  left:190px;
+  color: #fff;
+  content: url(images/colorswatches.jpg);
+  border-top: 2px solid #5CA4D7;
+  border-right: 2px solid #5CA4D7;
+  border-left: 2px solid #5CA4D7;
+  position: absolute;
+  content-align: center;
+  z-index: 98;
+}
+
+li.tooltip2:hover:before{
+  content: "";
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #FFFFFF transparent transparent transparent;
+  position: absolute;
+  top: -3px;
+  border-style: solid;
+}
+
+
+li.tooltip3:hover:after{
+  margin: 0 auto;
+  width: 81px;
+  height: 181px;
+  bottom:53px;
+  left:123px;
+  color: #fff;
+  content: url(images/shirtsizes.jpg);
+  border-top: 2px solid #5CA4D7;
+  border-right: 2px solid #5CA4D7;
+  border-left: 2px solid #5CA4D7;
+  position: absolute;
+  content-align: center;
+  z-index: 98;
+}
+
+li.tooltip3:hover:before{
+  content: "";
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #FFFFFF transparent transparent transparent;
+  position: absolute;
+  top: -3px;
+  border-style: solid;
+}
+
+li.tooltip4:hover:after{
+  margin: 0 auto;
+  width: 83px;
+  height: 83px;
+  bottom:53px;
+  left:190px;
+  color: #fff;
+  content: url(images/colorswatches.jpg);
+  border-top: 2px solid #5CA4D7;
+  border-right: 2px solid #5CA4D7;
+  border-left: 2px solid #5CA4D7;
+  position: absolute;
+  content-align: center;
+  z-index: 98;
+}
+
+li.tooltip4:hover:before{
+  content: "";
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #FFFFFF transparent transparent transparent;
+  position: absolute;
+  top: -3px;
+  border-style: solid;
+}
+
+li.tooltip5:hover:after{
+  margin: 0 auto;
+  width: 81px;
+  height: 181px;
+  bottom:53px;
+  left:123px;
+  color: #fff;
+  content: url(images/shirtsizes.jpg);
+  border-top: 2px solid #5CA4D7;
+  border-right: 2px solid #5CA4D7;
+  border-left: 2px solid #5CA4D7;
+  position: absolute;
+  content-align: center;
+  z-index: 98;
+}
+
+li.tooltip5:hover:before{
+  content: "";
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #FFFFFF transparent transparent transparent;
+  position: absolute;
+  top: -3px;
+  border-style: solid;
+}
+
+li.tooltip6:hover:after{
+  margin: 0 auto;
+  width: 83px;
+  height: 83px;
+  bottom:53px;
+  left:190px;
+  color: #fff;
+  content: url(images/colorswatches.jpg);
+  border-top: 2px solid #5CA4D7;
+  border-right: 2px solid #5CA4D7;
+  border-left: 2px solid #5CA4D7;
+  position: absolute;
+  content-align: center;
+  z-index: 98;
+}
+
+li.tooltip6:hover:before{
+  content: "";
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #FFFFFF transparent transparent transparent;
+  position: absolute;
+  top: -3px;
+  border-style: solid;
+}
+p{
+  margin-top: 20px;
+  font-family: Arial;
+  color: #5CA4D7;
+  font-size: 23px;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+}
